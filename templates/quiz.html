@@ -1,56 +1,93 @@
-<html>
-    <form action="/quiz" method="post" enctype="multipart/form-data">
-    <h3>
-        1: Neurons are the brain cells that are covered as well as protected with a fatty substance called _________. 
-    </h3>
-    <input type="text" name="q1">
-    <h3>
-        2: This cycle of addiction keeps the user coming back over and over again to the source of their_________.   
-    </h3> 
-    <input type="text" name="q2">
-    <h3>
-        3: Screen addictions have the same dopamine-dependent negative mental effects as_________.   
-    </h3>
-    <input type="text" name="q3">
-    <h3>
-        4:  ____________makes it harder to retain information, socially interact, and regulate their emotions.   
-    </h3>
-    <input type="text" name="q4">
-    <h3>
-        5: A single pickup of a _______ can set off a chain reaction of _______, which makes it harder and harder to resist the urge to pick it up again.   
-    </h3>
-    <input type="text" name="q5">
-    <h3>
-        6:________ brains are especially susceptible to the factors that trigger the reward centre of the brain.  
-    </h3>
-    <input type="text" name="q6">
-    <h3>
-        7: Addictive behaviour increases the amount of reward-connected ___________ in the brain.   
-    </h3>
-    <input type="text" name="q7">
-    <h3>
-        8:MRI scans have shown that there is a premature thinning of the ____________________ and is linked to excessive screen use.  
-    </h3>
-    <input type="text" name="q8">
-    <h3>
-        9) The function of the ____________ is processing different types of information from the senses and is linked to a person’s highest IQ levels, and has a serious impact on one’s ability to regulate emotions, plan for the future, and can possibly result in poor impulse control  
-    </h3>
-    <input type="text" name="q9">
-    <h3>
-        10) Scientists are finding that the changes in the ____________ layer’s fineness in teens are way thinner than normal.   
-    </h3>
-    <input type="text" name="q10">
-    <h3>
-        11) Developing ___________is a  key that can break down these addictive habits.   
-    </h3>
-    <input type="text" name="q11">
-    <h3>
-        12) ________ brains are more vulnerable to the tempting side effects of the reward centre of the brain.    
-    </h3>
-    <input type="text" name="q12">
-<button type="submit">
-    submit
-</button>
-    </form>
+<html lang="en">
+        <head>
+          <title>Bootstrap Example</title>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        </head>
+        <body>
+            <div class="jumbotron text-center" style="margin-bottom:0">
+                <h1>Bee Posi</h1>
+                <p>Made by Ava</p> 
+              </div>
+              
+              <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+                <a class="navbar-brand" href="/">Home</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="/information">Information</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/quiz">Quiz</a>
+                    </li>
+                  </ul>
+                </div>  
+              </nav>
+            
+    <div class="container">
+        <h2>Stacked form</h2>
+        <form action="/quizgrade" method="post">
+          <div class="form-group">
+            <label for="email">1: Neurons are the brain cells that are covered as well as protected with a fatty substance called _________.</label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q1">
+          </div>
+          <div class="form-group">
+            <label for="email">2: This cycle of addiction keeps the user coming back over and over again to the source of their_________.  </label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q2">
+          </div>
+          <div class="form-group">
+            <label for="email">3: Screen addictions have the same dopamine-dependent negative mental effects as_________.  </label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q3">
+          </div>
+          <div class="form-group">
+            <label for="email">4: ____________makes it harder to retain information, socially interact, and regulate their emotions. </label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q4">
+          </div>
+          <div class="form-group">
+            <label for="email">5: A single pickup of a _______ can set off a chain reaction of _______, which makes it harder and harder to resist the urge to pick it up again. </label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q5">
+          </div>
+          <div class="form-group">
+            <label for="email">6: ________ brains are especially susceptible to the factors that trigger the reward centre of the brain.</label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q6">
+          </div>
+          <div class="form-group">
+            <label for="email">7: Addictive behaviour increases the amount of reward-connected ___________ in the brain</label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q7">
+          </div>
+          <div class="form-group">
+            <label for="email">8: MRI scans have shown that there is a premature thinning of the ____________________ and is linked to excessive screen use.</label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q8">
+          </div>
+          <div class="form-group">
+            <label for="email">9: The function of the ____________ is processing different types of information from the senses and is linked to a person’s highest IQ levels, and has a serious impact on one’s ability to regulate emotions, plan for the future, and can possibly result in poor impulse control</label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q9">
+          </div>
+          <div class="form-group">
+            <label for="email">10: Scientists are finding that the changes in the ____________ layer’s fineness in teens are way thinner than normal.</label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q10">
+          </div>
+          <div class="form-group">
+            <label for="email">11: Developing ___________is a  key that can break down these addictive habits. </label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q11">
+          </div>
+          <div class="form-group">
+            <label for="email">12: ________ brains are more vulnerable to the tempting side effects of the reward centre of the brain.</label>
+            <input type="text" class="form-control" id="q1" placeholder="Fill in the blank" name="q12">
+          </div>
+ 
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
 
+
+
+    </body>
 </html>

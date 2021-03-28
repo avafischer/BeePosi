@@ -11,20 +11,20 @@ def Hello_World():
 def information():
     return render_template("Information.html")
     
-@app.route("/quiz", methods=["POST", "GET"])
+@app.route("/quizgrade", methods=["POST", "GET"])
 def quiz():
-    Q1 = request.form["Q1"]
-    Q2 = request.form["Q2"]
-    Q3 = request.form["Q3"]
-    Q4 = request.form["Q4"]
-    Q5 = request.form["Q5"]
-    Q6 = request.form["Q6"]
-    Q7 = request.form["Q7"]
-    Q8 = request.form["Q8"]
-    Q9 = request.form["Q9"]
-    Q10 = request.form["Q10"]
-    Q11= request.form["Q11"]
-    Q12= request.form["Q12"]
+    Q1 = request.form["q1"]
+    Q2 = request.form["q2"]
+    Q3 = request.form["q3"]
+    Q4 = request.form["q4"]
+    Q5 = request.form["q5"]
+    Q6 = request.form["q6"]
+    Q7 = request.form["q7"]
+    Q8 = request.form["q8"]
+    Q9 = request.form["q9"]
+    Q10 = request.form["q10"]
+    Q11= request.form["q11"]
+    Q12= request.form["q12"]
     score = 0
     if Q1 == "myelin":
         score = score+1
@@ -50,10 +50,10 @@ def quiz():
         score = score+1
     if Q12 == "developing":
         score = score+1
-    display = "your score is " + str(score) + "/3"
+    display = "your score is " + str(score) + "/12"
     return display
 
-@app.route("/quizload")
+@app.route("/quiz")
 def quizload():
     return render_template("quiz.html")
 
